@@ -8,7 +8,7 @@ stages{
         stage('Testing Env'){
             steps{
                 
-                sh 'firebase  deploy -P replica-3 --token "$FIREBASE_DEPLOY_TOKEN"'
+                sh 'firebase  deploy -P replica-testing --token "$FIREBASE_DEPLOY_TOKEN"'
 
                 }
             }
@@ -24,7 +24,7 @@ stages{
         stage('Production Env'){
             steps{
                
-                // sh 'firebase  deploy -P class-excercise2-production --token "$FIREBASE_DEPLOY_TOKEN"'
+                // sh 'firebase  deploy -P replica-production --token "$FIREBASE_DEPLOY_TOKEN"'
                 echo "Production"
                 }
         }
