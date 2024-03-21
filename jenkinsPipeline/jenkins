@@ -8,7 +8,7 @@ stages{
         stage('Testing Env'){
             steps{
                 
-                sh 'firebase  deploy -P cal-test-f8b86 --token "$FIREBASE_DEPLOY_TOKEN"'
+                sh 'firebase  deploy -P replica-3 --token "$FIREBASE_DEPLOY_TOKEN"'
 
                 }
             }
